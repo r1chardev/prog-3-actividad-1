@@ -1,3 +1,9 @@
+## Prompt de referencia
+> ¿Que ventajas tiene usar Elixir en lugar de Erlang? Hable de: * Distribuido, concurrente, resiliente, velocidad, facil de usar * Actualización de codigo en vivo, árbol de supervisión * Metaprogramación - DSL (Domain Specific Language) * NIF (Native IMplemented Functions)
+
+---
+
+
 # ¿Qué ventajas tiene usar Elixir en lugar de Erlang?
 
 ---
