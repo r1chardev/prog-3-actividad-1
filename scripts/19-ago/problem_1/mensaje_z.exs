@@ -1,9 +1,10 @@
 defmodule Secuencial do
 
     def main() do
-      "Funcion publica"
+      Util.pedir_dato()
       |>Util.mostrar_mensaje()
     end
 end
 
 Secuencial.main()
+
