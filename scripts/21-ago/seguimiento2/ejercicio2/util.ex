@@ -4,16 +4,20 @@ defmodule Util do
   """
 
   @doc """
-    Displays a message using a Java dialog.
+  Muestra un mensaje a través de un panel en Java.
+
+  ## Parametros
+  * `mensaje` - Mensaje a mostrar
   """
   def mostrar_mensaje(message) do
     System.cmd("java", ["-cp", ".", "Mensaje", message])
   end
 
   @doc """
-    llama al metodo en java y toma el mensaje ingresado por el usuario.
+  llama al metodo en java y toma el mensaje ingresado por el usuario.
 
-
+  ## Parametros
+  * `data` - información que se le pasará a java
   """
   def pedir_dato(data) do
     System.cmd("java", ["-cp", ".", "Mensaje", "input", data])
@@ -22,7 +26,10 @@ defmodule Util do
   end
 
   @doc """
-   Cuenta cuantas letras hay en el mensaje (excluyendo espacios y otros caracteres).
+  Cuenta cuantas letras hay en el mensaje (excluyendo espacios y otros caracteres).
+
+  ## Parametros
+  * `mensaje` - String al que se le va a contar cuantas letras tiene
   """
   def contar_letras(message) do
     message
@@ -31,7 +38,11 @@ defmodule Util do
   end
 
   @doc """
-   Muestra el resultado del conteo de letras por consola.
+  Muestra el resultado del conteo de letras por consola.
+
+  ## Parametros
+  * `mensaje` - mensaje al que se le contaron la cantidad de letras
+  * `cantidad_letras` - muestra la cantidad de letras de el mensaje
   """
   def mostrar_resultado(mensaje, cantidad_letras) do
     IO.puts("El mensaje '#{mensaje}' tiene #{cantidad_letras} letras")
